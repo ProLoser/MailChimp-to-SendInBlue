@@ -4,7 +4,13 @@ const tokens = document.getElementById('tokens');
 let result = '';
 const TOKENS_PATTERN = /\*\|\w+\|\*/gi;
 const suggestions = {
-  '*|EMAIL|*': '{EMAIL}'
+  '*|MC:SUBJECT|*': '',
+  '*|MC_PREVIEW_TEXT|*': '',
+  '*|EMAIL|*': '{EMAIL}',
+  '*|NAME|*': '{NAME}',
+  '*|ARCHIVE|*': '[ARCHIVE]',
+  '*|UPDATE_PROFILE|*': '[]',
+  '*|UNSUB|*': '[UNSUBSCRIBE]',
 };
 
 upload.addEventListener('change', () => {
