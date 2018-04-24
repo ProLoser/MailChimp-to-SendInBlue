@@ -1,0 +1,31 @@
+{
+  "name": "mailchimp-to-sendinblue",
+  "version": "1.0.0",
+  "description": "This converts MailChimp tags and HTML Templates to a format that can be pasted into SendInBlue without data loss",
+  "module": "src/index.js",
+  "scripts": {
+    "start": "npm run build && npm run html",
+    "build": "rollup -c",
+    "html": "cp -rf src/index.html dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProLoser/MailChimp-to-SendInBlue.git"
+  },
+  "author": "Dean Sofer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProLoser/MailChimp-to-SendInBlue/issues"
+  },
+  "homepage": "https://github.com/ProLoser/MailChimp-to-SendInBlue#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint-plugin-import": "^2.11.0",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  }
+}

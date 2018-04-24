@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>*|SUBJECT|*</title>
+  
+  <style>
+    textarea {
+      width: 100%;
+      height: 200px;
+    }
+    #upload {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>MailChimp to SendInBlue Template Converter *|EMAIL|*</h1>
+  <p>Instructions:</p>
+  <ol>
+    <li>Upload template</li>
+    <li>Swap all located tokens</li>
+    <li>Copy generated HTML</li>
+    <li>On the SendInBlue campaign design step, select "Paste your Code"</li>
+    <li>Paste the generated HTML into the textbox and hit "Save"</li>
+  </ol>
+  <input type="file" id="upload">
+  <h3>Detected Tokens</h3>
+  <ul id="tokens">
+  </ul>
+  <textarea id="output" placeholder="Converted Template" readonly></textarea>
+</body>
+</html>
