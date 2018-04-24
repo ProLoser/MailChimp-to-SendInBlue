@@ -7,7 +7,13 @@
   var result = '';
   var TOKENS_PATTERN = /\*\|\w+\|\*/gi;
   var suggestions = {
-    '*|EMAIL|*': '{EMAIL}'
+    '*|MC:SUBJECT|*': '',
+    '*|MC_PREVIEW_TEXT|*': '',
+    '*|EMAIL|*': '{EMAIL}',
+    '*|NAME|*': '{NAME}',
+    '*|ARCHIVE|*': '[ARCHIVE]',
+    '*|UPDATE_PROFILE|*': '[]',
+    '*|UNSUB|*': '[UNSUBSCRIBE]'
   };
 
   upload.addEventListener('change', function () {
