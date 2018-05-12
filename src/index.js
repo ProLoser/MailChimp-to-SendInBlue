@@ -1,3 +1,5 @@
+import juice from 'juice';
+
 const output = document.getElementById('output');
 const upload = document.getElementById('upload');
 const tokens = document.getElementById('tokens');
@@ -34,6 +36,8 @@ upload.addEventListener('change', () => {
       }
     });
     tokens.innerHTML = matches.join('');
+    
+    output.value = juice(output.value);
   };
 
   // when the file is read it triggers the onloadend event above
