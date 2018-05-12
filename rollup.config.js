@@ -1,3 +1,4 @@
+import json from 'rollup-plugin-json';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
@@ -10,7 +11,10 @@ export default {
     format: 'iife'
   },
   plugins: [
-    resolve(),
+    json(),
+    resolve({
+      extensions: [ '.js', '.json' ]
+    }),
     commonjs({
       include: 'node_modules/**'
     }),

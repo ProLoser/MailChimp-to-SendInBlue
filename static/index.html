@@ -19,12 +19,18 @@
     <li>Upload template</li>
     <li>Swap all located tokens</li>
     <li>Copy generated HTML</li>
-    <li>On the SendInBlue campaign design step, select "Paste your Code"</li>
+    <li>Go to <a href="https://templates.mailchimp.com/resources/inline-css/" target="_blank">MailChimp's CSS Inliner Tool</a></li>
+    <li>Paste generated HTML into the textbox</li>
+    <li>Press "Convert"</li>
+    <li>Copy converted HTML</li>
+    <li>Open the SendInBlue campaign design step, choose "Paste your Code"</li>
     <li>Paste the generated HTML into the textbox and hit "Save"</li>
   </ol>
   <input type="file" id="upload">
   <h3>Tokens Found</h3>
   <ul id="tokens"></ul>
+  <input type="text" id="previewText" placeholder="Preview Text">
+  <img src="Email-Preview.png">
   <textarea id="output" placeholder="Converted Template" readonly></textarea>
   
   <script src="./bundle.js"></script>
